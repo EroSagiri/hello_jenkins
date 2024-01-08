@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'rust:1.75'
-            argv ''
         }
     }
     stages {
