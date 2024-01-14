@@ -19,10 +19,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            archiveArtifacts artifacts: 'target/release/hello_jenkins', fingerprint: true
-        }
-    }
 }
